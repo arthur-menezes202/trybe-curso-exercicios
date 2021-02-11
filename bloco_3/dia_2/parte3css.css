@@ -1,0 +1,24 @@
+h1{
+    font-family:sans-serif ;
+}
+p{
+    font-weight: 600;
+    font-size: 44px;
+    font-style: italic;
+    line-height: 10cm;
+    text-align: center;
+    text-decoration: rgb(rgb(70, 14, 223), green, blue);
+}
+#amarelo{
+    background-color: yellow;
+}
+#vermelho{
+    background-color: red;
+}
+#marrom{
+    background-color: saddlebrown;
+}
+body{
+    font-size: 16px;
+
+}
