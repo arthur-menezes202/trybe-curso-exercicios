@@ -49,7 +49,7 @@ for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
 console.log(maior);
 */
 
-
+/*exercicio 6
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let impar = 0;
 for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
@@ -65,4 +65,15 @@ if (impar === 0){
 else{
 console.log(impar);
 }
+*/
 
+/*exercico 7
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menor = 999999;
+for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
+   if(numbers[indexPlay] < menor){
+       menor = numbers[indexPlay];
+   }
+}
+console.log(menor);
+*/
