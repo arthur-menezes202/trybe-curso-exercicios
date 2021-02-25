@@ -12,7 +12,7 @@ for(indexPlay = 0; indexPlay < numbers.length; indexPlay ++){
 console.log(cont);
 */
 
-
+/*exercicio 3
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let cont = 0;
 for(indexPlay = 0; indexPlay < numbers.length; indexPlay ++){
@@ -20,3 +20,20 @@ for(indexPlay = 0; indexPlay < numbers.length; indexPlay ++){
 }
 let media = cont / numbers.length;
 console.log(media);
+*/
+
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let cont = 0;
+for(indexPlay = 0; indexPlay < numbers.length; indexPlay ++){
+     cont = cont + numbers[indexPlay];
+}
+let media = cont / numbers.length;
+
+if(media > 20){
+    console.log("valor maior que 20");
+}
+else{
+    console.log("valor menor ou igual a 20");
+}
+
