@@ -78,9 +78,21 @@ for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
 console.log(menor);
 */
 
-let array = [0];
-for(indexPlay = 0; indexPlay < 25; indexPlay ++){
-    array.push = indexPlay;
-    console.log(array[indexPlay]);
+/*exercico 8
+let array = [];
+for(indexPlay = 0;indexPlay < 25; indexPlay ++){
+    array.push(indexPlay);
 }
 console.log(array);
+*/ 
+
+/*exercico 9
+let array = [];
+let divisao = 0
+for(indexPlay = 0;indexPlay < 25; indexPlay ++){
+    array.push(indexPlay);
+    divisao = array[indexPlay]/2;
+    console.log("posição" + indexPlay + " nº " + array[indexPlay] + " dividido por 2 é iqual a " + divisao);
+}
+console.log(array);
+*/
