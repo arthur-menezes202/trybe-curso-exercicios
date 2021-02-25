@@ -22,7 +22,7 @@ let media = cont / numbers.length;
 console.log(media);
 */
 
-
+/*exercicio 4
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let cont = 0;
 for(indexPlay = 0; indexPlay < numbers.length; indexPlay ++){
@@ -36,4 +36,14 @@ if(media > 20){
 else{
     console.log("valor menor ou igual a 20");
 }
+*/
 
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let maior = 0;
+for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
+   if(numbers[indexPlay] > maior){
+       maior = numbers[indexPlay];
+   }
+}
+console.log(maior);
