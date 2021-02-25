@@ -38,7 +38,7 @@ else{
 }
 */
 
-
+/*exercicio 5
 let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let maior = 0;
 for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
@@ -47,3 +47,22 @@ for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
    }
 }
 console.log(maior);
+*/
+
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let impar = 0;
+for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
+   if(numbers[indexPlay] %2===0){
+       impar ++;
+   }
+   
+   }
+
+if (impar === 0){
+    console.log("nenhum valor ímpar encontrado")
+}
+else{
+console.log(impar);
+}
+
