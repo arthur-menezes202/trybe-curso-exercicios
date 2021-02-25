@@ -77,3 +77,10 @@ for(indexPlay = 0;indexPlay < numbers.length; indexPlay ++){
 }
 console.log(menor);
 */
+
+let array = [0];
+for(indexPlay = 0; indexPlay < 25; indexPlay ++){
+    array.push = indexPlay;
+    console.log(array[indexPlay]);
+}
+console.log(array);
