@@ -31,3 +31,22 @@ function maiorNumero(numero){
     return maior;
 }
 */
+
+let array = [15,275 ,375 ,4 ,654 ,7456 ,65 ,];
+let oMenorNumero = 0
+let maior = 9999999;
+for(let i = 0;i < array.length;i ++){
+  oMenorNumero = maiorNumero(array[i])
+}
+
+console.log(oMenorNumero)
+
+function maiorNumero(numero){
+   
+        if(numero < maior){
+            maior = numero;
+    }
+    return maior;
+}
+
+
