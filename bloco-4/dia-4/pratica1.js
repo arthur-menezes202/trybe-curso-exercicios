@@ -41,3 +41,19 @@ let info = {
       console.log(info[key])
   } 
   */
+/* exercicio 5
+ let info = {
+    personagem: "Margarida",
+    origem: "Pato Donald",
+    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  };
+  info.recorrente ="sim";
+ let info2 = {
+     personagem: info.personagem + " e tio patinhas",
+     origem: info.origem + " Christmas on Bear Mountain, Dell's Four Color Comics #178 ",
+     nota: info.nota + " e O último MacPatinhas",
+     recorrente: info.recorrente  
+ }
+
+ console.log(info2);
+*/
