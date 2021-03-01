@@ -13,24 +13,21 @@ function funcao(str) {
     }
 }
 */
-
-let array = [1 ,2 ,3 ,4 ,654 ,5 ,6 ,7];
-let v =0
-for(let i = 0;i < 8;i ++){
-  v = maiorNumero(array[i])
+/* exercicio 2
+let array = [1 ,2 ,3 ,4 ,654 ,7 ,65 ,];
+let oMaiorNumero = 0
+let maior = 0;
+for(let i = 0;i < array.length;i ++){
+  oMaiorNumero = maiorNumero(array[i])
 }
 
-console.log(v)
+console.log(oMaiorNumero)
 
 function maiorNumero(numero){
-    let maior = 0;
    
-        if(numero> maior){
+        if(numero > maior){
             maior = numero;
-        return maior;
-        
     }
-    else{
-        return
-    }
+    return maior;
 }
+*/
