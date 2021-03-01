@@ -17,3 +17,14 @@ let info = {
 
 console.log(info);
 */
+/* exercicio 3
+let info = {
+    personagem: "Margarida",
+    origem: "Pato Donald",
+    nota: "Namorada do personagem principal nos quadrinhos do Pato Donald",
+  };
+  info.recorrente ="sim";
+
+
+  console.log(Object.keys(info));
+*/
