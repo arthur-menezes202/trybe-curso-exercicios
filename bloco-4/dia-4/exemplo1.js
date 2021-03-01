@@ -14,13 +14,3 @@ let bestInTheWorld = {
 }
 console.log("A jogadora Marta Silva foi eleita a melhor do mundo por " + bestInTheWorld.medalhas.length + " vezes");
 */ 
-
-let car = {
-    type: "Fiat",
-    model: "500",
-    color: "white",
-  };
-  
-  for (let i in car) {
-    console.log(i ,car[i]);
-  }
