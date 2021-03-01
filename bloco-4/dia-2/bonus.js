@@ -6,7 +6,9 @@ for (let i = 1; i < array.length; i++) {
   
         array[i] = array[j];
         array[j] = position;
+
+        
       }
-      console.log(array)
+      
     }
   }
