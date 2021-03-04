@@ -31,7 +31,7 @@ function maiorNumero(numero){
     return maior;
 }
 */
-
+/* exercicio 3
 let array = [15,275 ,375 ,4 ,654 ,7456 ,65 ,];
 let oMenorNumero = 0
 let maior = 9999999;
@@ -48,5 +48,25 @@ function maiorNumero(numero){
     }
     return maior;
 }
+*/
+
+let array = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana'];
+let nomeMaior = "";
+let numeroDeLetras = 0
+for(let i = 0;i < array.length;i ++){
+    numeroDeLetras = maiorNumero(array[i])
+  }
+console.log(numeroDeLetras);
+function  maiorNumero(nome){
+    if(numeroDeLetras > nome.length){
+        numeroDeLetras = nome.length;
+
+        return numeroDeLetras;
+    }
+}
+
+
+
+
 
 
