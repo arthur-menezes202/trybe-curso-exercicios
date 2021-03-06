@@ -42,3 +42,10 @@ function createDaysOfTheWeek() {
         encontraLu.appendChild(criarItemDaLista);
         }
     }
+
+//exercicio 2
+    let buttonContainer = document.querySelector('.buttons-container');
+    let criarButton = document.createElement("button");
+    criarButton.id = "btn-holiday";
+    buttonContainer.appendChild(criarButton);
+
