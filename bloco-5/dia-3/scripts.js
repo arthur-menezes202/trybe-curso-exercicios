@@ -15,8 +15,8 @@ function createDaysOfTheWeek() {
   
   // Escreva seu código abaixo.
 
-    //const dezDaysList = ["29", "30", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"];
-    const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
+    const dezDaysList = ["29", "30", "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20", "21", "22", "23", "24", "25", "26", "27", "28", "29", "30", "31"];
+    //const dezDaysList = [29, 30, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31];
     let encontraLu =document.getElementById("days");
     
     for(let index = 0;index < dezDaysList.length;index ++) {
@@ -74,19 +74,19 @@ function createDaysOfTheWeek() {
 //exercicio 5
 
     criarButtonFriday.onclick = function(){
-    let encontrarFriday = document.querySelectorAll('.friday');
+    let encontrarFriday = document.getElementsByClassName("friday");
     let cont = 4;
-    for(let index = 0;index < encontrarFriday.length;index ++ ){
 
-      if(encontrarFriday[index].innerText == 5 || encontrarFriday[index].innerText == 12 || encontrarFriday[index].innerText == 19 || encontrarFriday[index].innerText == 26 ){
-        console.log("entrou no if");
+    for(let index = 0;index < encontrarFriday.length;index ++ ){
+      let valorDaLista = encontrarFriday[index].value;
+      if(encontrarFriday[index].innerHTML!== "SEXTOU!"  ) {
+        console.log("entrou no if " + encontrarFriday[index].value );
         encontrarFriday[index].innerText = "SEXTOU!"
       }
-      else{
-        encontrarFriday[index].innerText = cont;
-        cont = cont + 7;
-        console.log("entrou no else");
-      }
-
+       else{
+         encontrarFriday[index].innerText = cont;
+         cont = cont + 7;
+         console.log("entrou no else");
+       }
     }
     }
