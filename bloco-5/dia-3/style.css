@@ -11,7 +11,9 @@ body {
 button {
   margin: 20px;
 }
-
+.teste{
+  background-color: #eeeeee;
+}
 #btn-add {
   margin: 0;
 }
@@ -22,7 +24,6 @@ button {
   text-align: center;
   width: 100%;
 }
-
 #days {
   margin: 0;
 }

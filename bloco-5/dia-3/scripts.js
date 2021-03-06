@@ -49,3 +49,17 @@ function createDaysOfTheWeek() {
     criarButton.id = "btn-holiday";
     buttonContainer.appendChild(criarButton);
 
+//exercicio 3 
+
+    criarButton.onclick = function(){
+      let encontrarHoliday = document.querySelectorAll('.holiday');
+    for(index = 0;index < encontrarHoliday.length;index ++ ){
+      if(encontrarHoliday[index].style.backgroundColor == 'white'){
+        encontrarHoliday[index].style.backgroundColor = 'gray';
+      }else{
+        encontrarHoliday[index].style.backgroundColor = 'white';
+      }
+
+    }
+    }
+//exercicio 4
