@@ -47,6 +47,7 @@ function createDaysOfTheWeek() {
     let buttonContainer = document.querySelector('.buttons-container');
     let criarButton = document.createElement("button");
     criarButton.id = "btn-holiday";
+    criarButton.innerText = "feriados";
     buttonContainer.appendChild(criarButton);
 
 //exercicio 3 
@@ -63,3 +64,9 @@ function createDaysOfTheWeek() {
     }
     }
 //exercicio 4
+
+   //let buttonContainer = document.querySelector('.buttons-container');
+    let criarButtonFriday = document.createElement("button");
+    criarButtonFriday.id = "btn-friday";
+    criarButtonFriday.innerText = "sexta";
+    buttonContainer.appendChild(criarButtonFriday);
