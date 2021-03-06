@@ -55,7 +55,7 @@ function createDaysOfTheWeek() {
     criarButton.onclick = function(){
       let encontrarHoliday = document.querySelectorAll('.holiday');
     for(index = 0;index < encontrarHoliday.length;index ++ ){
-      if(encontrarHoliday[index].style.backgroundColor == 'white'){
+      if(encontrarHoliday[index].style.backgroundColor != 'gray'){
         encontrarHoliday[index].style.backgroundColor = 'gray';
       }else{
         encontrarHoliday[index].style.backgroundColor = 'white';
@@ -70,3 +70,23 @@ function createDaysOfTheWeek() {
     criarButtonFriday.id = "btn-friday";
     criarButtonFriday.innerText = "sexta";
     buttonContainer.appendChild(criarButtonFriday);
+
+//exercicio 5
+
+    criarButtonFriday.onclick = function(){
+    let encontrarFriday = document.querySelectorAll('.friday');
+    let cont = 4;
+    for(let index = 0;index < encontrarFriday.length;index ++ ){
+
+      if(encontrarFriday[index].innerText == 5 || encontrarFriday[index].innerText == 12 || encontrarFriday[index].innerText == 19 || encontrarFriday[index].innerText == 26 ){
+        console.log("entrou no if");
+        encontrarFriday[index].innerText = "SEXTOU!"
+      }
+      else{
+        encontrarFriday[index].innerText = cont;
+        cont = cont + 7;
+        console.log("entrou no else");
+      }
+
+    }
+    }
