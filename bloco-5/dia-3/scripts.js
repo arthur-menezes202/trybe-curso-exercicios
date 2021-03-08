@@ -79,14 +79,24 @@ function createDaysOfTheWeek() {
 
     for(let index = 0;index < encontrarFriday.length;index ++ ){
       let valorDaLista = encontrarFriday[index].value;
-      if(encontrarFriday[index].innerHTML!== "SEXTOU!"  ) {
-        console.log("entrou no if " + encontrarFriday[index].value );
+      if(encontrarFriday[index].innerHTML!== "SEXTOU!") {
         encontrarFriday[index].innerText = "SEXTOU!"
       }
        else{
          encontrarFriday[index].innerText = cont;
          cont = cont + 7;
-         console.log("entrou no else");
+       } 
+    } 
+    }
+// exercicio 6
+
+    let aumentaTamanho = document.querySelector('#day')
+    for (var i = 0; i < aumentaTamanho.length; i++) {
+    aumentaTamanho[i].addEventListener('mouseout', minhaFuncao);
+    }
+    function  minhaFuncao(){
+      let lista =document.getElementsByClassName("day");
+       lista[3].style.fontSize="40px";
        }
-    }
-    }
+    
+    
