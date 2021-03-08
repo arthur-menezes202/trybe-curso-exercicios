@@ -90,13 +90,9 @@ function createDaysOfTheWeek() {
     }
 // exercicio 6
 
-    let aumentaTamanho = document.querySelector('#day')
-    for (var i = 0; i < aumentaTamanho.length; i++) {
-    aumentaTamanho[i].addEventListener('mouseout', minhaFuncao);
-    }
-    function  minhaFuncao(){
-      let lista =document.getElementsByClassName("day");
-       lista[3].style.fontSize="40px";
-       }
+    let aumentaTamanho = document.querySelector('#days')
+    console.log(aumentaTamanho);
+   
+  
     
     
