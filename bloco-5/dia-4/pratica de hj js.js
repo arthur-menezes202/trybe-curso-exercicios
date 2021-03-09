@@ -28,21 +28,33 @@ function mudaCorTexto(){
     //     body.style.backgroundColor = localStorage.getItem("cor");
     // }
 }
- let encontraTexto = document.getElementsByClassName("texto");
- console.log(encontraTexto[0])
+ function mudaTexto(){
+    let encontraTexto = document.getElementsByClassName("texto");
+    for(let index = 0; index < encontraTexto.length;index ++){
+    encontraTexto[index].style.fontSize = localStorage.getItem("tamanho");
+ }
+  
+ } 
+ mudaTexto();
 function mudaTamanhoDoTexto() {
 
-    let pegaP =  document.getElementsByTagName("p")[0];
-    pegaP.style.fontSize = localStorage.getItem("tamanho");
-    if (pegaP.style.fontSize != "20px"){
-    localStorage.setItem("tamanho" , "20px");
+    let tamanhoDoTexto = document.getElementsByClassName("texto")[0];
+    let tamanhoDaFonte = tamanhoDoTexto.style.fontSize;
+    if (tamanhoDaFonte !== '15px'){
+    localStorage.setItem("tamanho" , "15px");
+    mudaTexto();
     console.log("entrou no if");
     } 
     else {
-        localStorage.setItem("tamanho" , "15px"); 
+        localStorage.setItem("tamanho" , "20px"); 
+        mudaTexto();
         console.log("entrou no else");
     }
+    console.log(tamanhoDaFonte);
+    
 } 
+
+
 function mudaEspacamento() {
     console.log("teste 4 ");
 }
