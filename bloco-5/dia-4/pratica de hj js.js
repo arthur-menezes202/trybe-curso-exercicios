@@ -55,7 +55,7 @@ function mudaTamanhoDoTexto() {
 
 function mudaEspacamento() {
     let PegaTexto = document.getElementsByClassName("texto")[0];
-    let espacamento = PegaTexto.style.line;
+    let espacamento = PegaTexto.style.;
     console.log(espacamento);
 }
 function mudaTipoDeFonte() {
