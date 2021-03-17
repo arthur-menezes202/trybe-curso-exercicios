@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="get" enctype="">
+    <fieldset>
+        Nome:
+        <input type="text" maxlength="40" required >
+        <br>
+        Email:
+        <input type="email" maxlength="50" required >
+        <br>
+        CPF:
+        <input type="text" maxlength="11" required >
+        <br>
+        Endereço:
+        <input type="text" maxlength="200" required >
+        <br>
+        Cidade:
+        <input type="text" maxlength="28" required >
+        <br>
+            <select name="estados-brasil" required>
+                <option value="AC">Acre</option>
+                <option value="AL">Alagoas</option>
+                <option value="AP">Amapá</option>
+                <option value="AM">Amazonas</option>
+                <option value="BA">Bahia</option>
+                <option value="CE">Ceará</option>
+                <option value="DF">Distrito Federal</option>
+                <option value="ES">Espírito Santo</option>
+                <option value="GO">Goiás</option>
+                <option value="MA">Maranhão</option>
+                <option value="MT">Mato Grosso</option>
+                <option value="MS">Mato Grosso do Sul</option>
+                <option value="MG">Minas Gerais</option>
+                <option value="PA">Pará</option>
+                <option value="PB">Paraíba</option>
+                <option value="PR">Paraná</option>
+                <option value="PE">Pernambuco</option>
+                <option value="PI">Piauí</option>
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="RN">Rio Grande do Norte</option>
+                <option value="RS">Rio Grande do Sul</option>
+                <option value="RO">Rondônia</option>
+                <option value="RR">Roraima</option>
+                <option value="SC">Santa Catarina</option>
+                <option value="SP">São Paulo</option>
+                <option value="SE">Sergipe</option>
+                <option value="TO">Tocantins</option>
+            </select>
+        <br>
+        <label for="local">lagradouro:
+        <input type="radio" name="lagradouro" id="local" required>casa
+        </label>
+        <label for="apartamento">
+            <input type="radio" name="lagradouro" id="apartamento" required>apartamento
+            </label>
+    </fieldset>
+    <fieldset>
+        <textarea name="resumo" id="" cols="30" rows="10" maxlength="1000" required></textarea>
+        <br>
+        cargo
+        <input type="text" name="cargo" id="cargo" maxlength="40" required >
+        <br>
+        descrição do cargo
+        <input type="text" name="descricao-do-cargo" id="descricao" maxlength="500" required >
+        <br>
+        <input id="date" type="date" required>
+        <br>
+    </fieldset>
+    <button type="submit">enviar</button>
+</form>
+    
+    <script src="script.js"></script>
+</body>
+</html>

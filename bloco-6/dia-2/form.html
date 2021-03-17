@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>formulario</title>
+  </head>
+  <body>
+    <form action="get" enctype="" class="formulario">
+        <fieldset >
+            <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Nome:</span>
+                </div>
+                <input  required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+            
+            
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Email:</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">CPF:</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Endereço:</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">cidade</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Nº</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <select required class="form-select form-select-sm" aria-label=".form-select-sm example">
+                    <option value="AC">Acre</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="PA">Pará</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PR">Paraná</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="SC">Santa Catarina</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="TO">Tocantins</option>
+                </select>
+            
+                <div class="form-check form-check-inline">
+                    <input required clrequiredass="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" class="tamanho-input" value="option1">
+                    <label class="form-check-label" for="inlineRadio1">casa:</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input required lrequiredass="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" class="tamanho-input" value="option2">
+                    <label class="form-check-label" for="inlineRadio2">Apartamento</label>
+                  </div>
+        </fieldset>
+            
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Cargo:</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="input-group input-group-sm mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="inputGroup-sizing-sm">Descrição do cargo:</span>
+                </div>
+                <input required type="text" class="form-control tamanho-input" aria-label="Small" aria-describedby="inputGroup-sizing-sm">
+              </div>
+              <div class="form-group">
+                <label for="exampleFormControlTextarea1">Resumo do ultimo emprego</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="5"></textarea>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">Data de inicio</label>
+                <div class="col-10">
+                  <input required class="form-control tamanho-input" type="date"  id="example-date-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label for="example-date-input" class="col-2 col-form-label">Data de termino</label>
+                <div class="col-10">
+                  <input required class="form-control tamanho-input" type="date" id="example-date-input">
+                </div>
+              </div>
+        <button type="submit" class="btn btn-outline-success">Enviar</button>
+        <button type="reset" class="btn btn-outline-danger">Limpar</button>
+    </form>
+        <script src="script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+  </body>
+</html>

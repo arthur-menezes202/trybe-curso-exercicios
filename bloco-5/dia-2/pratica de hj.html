@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício 5.2</title>
+    <style>
+      div {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body id="pai">
+    <script>
+
+      let texto = "Exercício 5.2 - JavaScript DOM";
+      let criaIrmao = document.body;
+      let primeiraH1= document.createElement('h1');
+      primeiraH1.innerText = texto;
+      criaIrmao.appendChild(primeiraH1);
+//começa a 2
+    let DivMainContent = document.body;
+    let criarDiv2 = document.createElement('div');
+    criarDiv2.classList.add("main-content");
+    DivMainContent.appendChild(criarDiv2);
+    
+    
+
+    //exercicio 3
+      let criarDiv3 = document.createElement('div');
+      criarDiv3.className = 'center-content';
+      criarDiv2.appendChild(criarDiv3);
+
+//exercicio 4
+
+      let criarP = document.createElement('p');
+      criarP.innerText = "texto dentro de uma div de uma div de uma P"
+      criarDiv3.appendChild(criarP);
+
+//exercicio 5
+    
+    let criarDiv5 = document.createElement('div');
+    criarDiv5.className = ('left-content');
+    criarDiv2.appendChild(criarDiv5);
+//exerxixio 6
+
+    let criarDiv6 = document.createElement('div');
+    criarDiv6.className = ('right-content');
+    criarDiv2.appendChild(criarDiv6);
+//exercicio 7
+
+    let img = document.createElement("img");
+    img.src = "https://picsum.photos/200";
+    img.className = 'small-image';
+    criarDiv5.appendChild(img);
+//exercicio 8
+
+    let criaLista = document.createElement("ul")
+    for(let index = 0;index <= 10;index ++) {
+    let criaItem = document.createElement("li");
+    criaItem.appendChild(document.createTextNode(index));
+    criarDiv5.appendChild(criaItem);
+    }
+
+//exercicio 9
+
+    let criaH1= document.createElement("h1")
+    for(let index = 0;index <= 10;index ++) {
+    let criaH1= document.createElement("h1")
+    criaH1.appendChild(document.createTextNode(index)); //esta é a tarefa 2 da parte 2
+    criaH1.classList.add("description")
+    criarDiv6.appendChild(criaH1);
+    }
+
+//parte 2
+
+//exercicio 1
+
+    primeiraH1.classList.add("title");
+
+//exercicio 2
+//no exercicio 9 parte 1
+
+//exercicio 3
+    criarDiv2.removeChild(criarDiv2.children[1]);
+
+//exercicio 4
+  let divs =document.getElementsByTagName("div")[2];
+  divs.style.margin = "auto";
+  divs.style.padding = "auto"; 
+
+//exercicio 5
+
+ let divs2 = document.getElementsByTagName("div")[0];
+    divs2.style.backgroundColor  = "green";
+
+//execicio 6
+
+  criaLista.lastChild.remove();
+  criaLista.lastChild.remove();
+  
+
+    </script>
+  </body>
+</html>

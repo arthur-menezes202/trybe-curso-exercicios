@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(137, 173, 500) ;
+}
+.formulario{
+    margin: 5%;
+    padding: 50px ;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: rgb(153, 247, 252);
+    background-color: rgb(196, 245, 248);
+
+}
+textarea{
+    resize: none;
+    
+}
