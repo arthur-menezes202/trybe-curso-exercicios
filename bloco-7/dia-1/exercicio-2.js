@@ -9,7 +9,17 @@
 // }
 // console.log(faorial(4));
 
-const palavra = string => {
-    console.log("teste")
+// const palavra = string => {
+//     let dividirPalavra = string.split(' ');
+//     for (let i = 0;i <= dividirPalavra.lenght; i ++){
+//        if dividirPalavra[i].lenght
+//     }
+// }
+// palavra('vamo ve isso aqui o!!!')
+
+function click(){
+    let numeroClick = document.getElementsByTagName('button')[0].value;
+    encontraP = document.querySelector('#p');
+    console.log(encontraP)
+
 }
-palavra()

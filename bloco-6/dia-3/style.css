@@ -1,0 +1,30 @@
+.imagemTrybe{
+    width: 50px; 
+    height: 50px;
+}
+.estizacao-cabecalho{
+ background-color: #252525;
+ display: flex;
+}
+.tituloestilizacao{
+    padding: 0% 10% 0% 10%;
+    color: white;
+    align-items: center;
+}
+.cabecalho{
+    text-align: center;
+}
+.imagens{
+    width: 100px;
+    padding: 10px;
+    border-radius: 0px 0px 20px 0px;
+    border-width:  0px 0px 2px 0px solid;
+}
+.linha{
+    display: -webkit-flex;
+    display: flex;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+}
