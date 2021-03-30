@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css?family=Titillium+Web');
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+.container{
+    display: flex;
+    flex-wrap: wrap;
+}
+.header, .aside-one, .aside-two, .main-content, .cabessalho{
+    font-size: 20px;
+    padding: 40px;
+    font-family: 'Open Sans', sans-serif;
+    align-self: baseline;
+}
+ul{
+    list-style-type: none;
+}
+body{
+    background-color: blanchedalmond;
+}
+@media screen and (max-width: 380px){
+    body{
+        background-color: rgb(255, 207, 131);
+    }
+    p{
+        padding: 0% 6%;
+        font-size: 18px;
+    }
+    h1, h2, h3{
+        font-size: 20px;
+        padding: 0% 6%;
+    }
+}
+@media screen and (max-width: 770px){
+    body{
+        background-color: rgb(226, 151, 151);
+    }
+    li{
+        font-size: 20px;
+        padding: 0px 6%;
+    }
+    ul{
+        list-style-type: none;
+    }
+    .container{
+        flex-direction: row;
+    }
+    .aside-two{
+
+    }
+    p{
+        padding: 0% 8%;
+        font-size: 20px;
+    }
+    h1, h2, h3{
+        font-size: 20px;
+        padding: 0% 8%;
+    }
+
+}
