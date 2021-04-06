@@ -64,17 +64,19 @@ const books = [
 ];
 
 const expectedResult = [
-  'Frank Herbert',
-  'George R. R. Martin',
-  'Isaac Asimov',
-  'J. R. R. Tolkien',
+  'O Senhor dos Anéis',
+  'Fundação',
+  'O Chamado de Cthulhu',
 ];
 
-function fantasyOrScienceFictionAuthors() {
+function oldBooks() {
+    const currentYear = new Date().getFullYear();
     const livroFiltrado = books.filter((book) => (
-        book.genre === 'Fantasia' || book.genre === 'Ficção Científica'
-      ));
-     const newArray = livroFiltrado.map((livro) => livro.author.name).sort();
-     return newArray;
+      book.releaseYear < currentYear - 60
+    ));
+
+    return livroFiltrado.map((livro) => livro.name);
 }
-assert.deepStrictEqual(fantasyOrScienceFictionAuthors(), expectedResult);
+//console.log(oldBooks());
+
+assert.deepStrictEqual(oldBooks(), expectedResult);
