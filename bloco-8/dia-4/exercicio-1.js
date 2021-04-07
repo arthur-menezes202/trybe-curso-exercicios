@@ -8,9 +8,9 @@ const arrays = [
 ];
 
 function flatten(array) {
-  return array.reduce((acumulador, index) => {
-      return `${acumulador}, ${index}`;
-  })
+  return array.reduce((acumulador, index) => 
+    `${acumulador}${index}`,`,`
+  )
 }
 console.table(flatten(arrays));
-assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);
+//assert.deepStrictEqual(flatten(), ['1', '2', '3', true, 4, 5, 6]);
